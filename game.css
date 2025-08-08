@@ -1,0 +1,68 @@
+#gameCanvas {
+  background: #000;
+  border: 2px solid white;
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 1;
+  touch-action: none;
+}
+
+#overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.95);
+  border: 2px solid white;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  display: none;
+  z-index: 10;
+  color: white;
+}
+
+@media (max-width: 400px) {
+  #gameCanvas {
+    width: 280px;
+    height: 280px;
+  }
+
+  #maintenance-msg {
+    font-size: 14px;
+    max-width: 260px;
+  }
+}
+
+body {
+  margin: 0;
+  background: #000;
+  color: #fff;
+  font-family: "Courier New", monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  image-rendering: pixelated;
+  text-align: center;
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  max-width: 100vw;
+}
+
+#score {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: white;
+}
+#maintenance-msg {
+  margin-top: 15px;
+  font-size: 16px;
+  color: white;
+  max-width: 300px;
+  line-height: 1.4;
+}
