@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snake Game</title>
+
+  <!-- ✅ CSS should be in the head -->
+  <link rel="stylesheet" href="game.css" />
+</head>
+<body>
+  <div id="container">
+    <div id="score">Score: 0</div>
+    <canvas id="gameCanvas"></canvas>
+
+    <div id="overlay" style="display: none;">
+      <div id="gameMessage">Game Over</div>
+      <button onclick="restartGame()">Restart</button>
+    </div>
+
+    <div id="maintenance-msg">
+      Hey, thanks for visiting us!<br>
+      We are still building 🛠 and will be live on <strong>21st August</strong>.<br>
+      If you want to get in touch, hit us up at<br>
+      <a href="mailto:growth@dutient.ai" style="color: white; text-decoration: underline;">
+        growth@dutient.ai
+      </a>
+    </div>
+  </div>
+
+  <!-- ✅ JS should be at the end of body -->
+  <script src="game.js"></script>
+</body>
+</html>
